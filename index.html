@@ -1,11 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green-Earth</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
+
 <body>
-    
+    <!-- header start  -->
+    <header class="container mx-auto">
+        <!-- nav start  -->
+        <nav>
+            <div class="navbar bg-[#15803D] text-white">
+                <div class="navbar-start">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            <li><a>About</a></li>
+                            <li><a>Gallery</a></li>
+                            <li><a>Plant a Tree</a></li>
+                        </ul>
+                    </div>
+                    <button class="btn btn-ghost text-xl">Green Earth</button>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>About</a></li>
+                        <li><a>Gallery</a></li>
+                        <li><a>Plant a Tree</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end  ">
+                    <button
+                        class="btn bg-[#FACC15] text-[#15803D] border rounded-xl border-transparent shadow-none">Plant a
+                        Tree</button>
+                </div>
+            </div>
+        </nav>
+        <!-- hero section start  -->
+        <!-- <section>
+            <div class="hero min-h-screen"
+                style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
+                <div class="hero-overlay"></div>
+                <div class="hero-content text-neutral-content text-center">
+                    <div class="max-w-md">
+                        <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                        <p class="mb-5">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                        <button class="btn btn-primary">Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="hero min-h-fit bg-[#d9f5dc] flex   items-end justify-center pt-20">
+            <!-- Left leaf -->
+             <div class=""></div>
+            <div class="">
+                <img src="./assets/hero-leaf1.png" class="" alt="Leaf Left" />
+            </div>
+
+            <!-- Hero content -->
+            <div class="text-center px-4 max-w-80/100 self-center">
+                <!-- color: var(--Neutral/Dark, rgba(31, 41, 55, 1));
+font-family: Inter;
+font-size: 48px;
+font-weight: 700;
+line-height: 60px;
+letter-spacing: 0%;
+text-align: center; -->
+                <h1 class="text-xl lg:text-5xl font-bold text-gray-900 mb-4">
+                    Plant a Tree, Grow a Future
+                </h1>
+                <!-- color: var(--Neutral/Dark, rgba(31, 41, 55, 1));
+font-family: Inter;
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center; -->
+                <p class="text-gray-700 mb-6">
+                    Join our mission to plant 1 million trees and make the Earth greener for future generations.
+                </p>
+                <button
+                    class="bg-yellow-400 hover:bg-yellow-500 text-gray-900 font-semibold px-6 py-3 rounded-full shadow-lg transition">
+                    Get Involved
+                </button>
+            </div>
+
+            <!-- Right leaf -->
+            <div>
+
+                <img src="./assets/hero-leaf2.png" class=" " alt="Leaf Left" />
+            </div>
+
+        </section>
+
+
+    </header>
+
+
 </body>
+
 </html>
