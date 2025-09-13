@@ -6,10 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Green-Earth</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        .inter {
+            font-family: "Inter", sans-serif;
+        }
+    </style>
 </head>
 
-<body>
+<body class="inter">
     <!-- header start  -->
     <header class="container mx-auto">
         <!-- nav start  -->
@@ -25,7 +38,7 @@
                             </svg>
                         </div>
                         <ul tabindex="0"
-                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow text-black">
                             <li><a>About</a></li>
                             <li><a>Gallery</a></li>
                             <li><a>Plant a Tree</a></li>
@@ -70,9 +83,46 @@
         </section>
     </header>
 
+
+    <!-- plant section start  -->
+    <section id="plantSection" class="flex flex-col md:flex-row container mx-auto bg-base-200">
+        <div id="plantCategories" class=" basis-0 md:basis-1/5 lg:basis-1/6 flex flex-col p-4">
+            <h1 class="inter text-[20px] font-semibold text-[#000000] text-center md:text-left">Categories</h1>
+            <ul id="categoriesList" class="flex flex-row flex-wrap justify-center md:justify-normal  md:flex-col">
+            </ul>
+        </div>
+        <div id="spinner" class="hidden flex basis-0 md:basis-3/5 lg:basis-4/6  justify-center items-center py-10">
+            <div class="w-12 h-12 border-4 loading loading-bars loading-xl"> </div>
+        </div>
+
+        <div id="plantCard"
+            class="basis-0 md:basis-3/5 lg:basis-4/6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
+        </div>
+
+        <div class="basis-0 md:basis-1/5 lg:basis-1/6 bg-white p-4">
+            <div>
+                <h1 class="inter text-[20px] font-semibold text-[#000000]">Your Cart</h1>
+            </div>
+            <div id="cartcontainer">
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- modal section -->
+    <dialog id="modal" class="modal"></dialog>
+
+
+
+
+
+
+
+
     <!-- about start  -->
     <div class="bg-base-200 py-12 container mx-auto">
-        <div class="container mx-auto px-6 lg:px-12 w-9/12 mx-auto">
+        <div class="container mx-auto px-2 lg:px-12  w-9/12 ">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
 
                 <!-- Image -->
@@ -185,7 +235,7 @@
         </aside>
     </footer>
 
-
+    <script src="./script.js"></script>
 </body>
 
 </html>
