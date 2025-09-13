@@ -40,13 +40,13 @@ let showAllPlants = (plants) => {
     )}...</p>
     
     <div class="mt-2 flex flex-row items-center justify-between">
-      <div class="p-2 badge badge-success badge-outline bg-green-100 text-green-700">${
+      <span class="p-2 badge badge-success badge-outline bg-green-100 text-green-700">${
         plant.category
-      }</div>
-      <div class=" text-black">
+      }</span>
+      <di class=" text-black">
       <span>$</span>
       <span>${plant.price}</span>
-      </div>
+      </di>
     </div>
     
     <!-- Button stays at bottom -->
@@ -119,7 +119,7 @@ let showPlantCard = (plants) => {
   plants.forEach((plant) => {
     plantList.innerHTML += `
     <div>
-    <div class="bg-white shadow-md rounded-lg flex justify-between  flex-col">
+    <div class="bg-white shadow-md rounded-lg flex justify-between  flex-col ">
 
     <img class="w-full h-60 object-cover bg-white rounded-t-lg p-4 pb-0" src="${
       plant.image
@@ -135,13 +135,13 @@ let showPlantCard = (plants) => {
     )}...</p>
     
     <div class="mt-2 flex flex-row items-center justify-between">
-      <div class="p-2 badge badge-success badge-outline bg-green-100 text-green-700">${
+      <span class="p-2 badge badge-success badge-outline bg-green-100 text-green-700">${
         plant.category
-      }</div>
-      <div class=" text-black">
+      }</span>
+      <di class=" text-black">
       <span>$</span>
       <span>${plant.price}</span>
-      </div>
+      </di>
     </div>
     
     <!-- Button stays at bottom -->
@@ -214,7 +214,7 @@ let showCarts = () => {
   );
   if (cartitems.length > 0) {
     cartlist.innerHTML += `
-      <li class="p-2 font-bold flex justify-between">
+      <li class="font-bold flex justify-between">
         <span>Total:</span> 
         <span>$${grandTotal}</span>
       </li>
